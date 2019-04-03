@@ -10,7 +10,7 @@ begin
    while V' != empty do
       begin
          Choose y member of V'
-         Find all vertices joined to y by some path<br/>
+         Find all vertices joined to y by some path
          Remove these vertices and y from V' and corresponding edges from E;
          c := c + 1
       end
