@@ -1,27 +1,13 @@
 graph = {"a": ["c"],
-         "b": ["c", "e"],
-         "c": ["a", "b", "e", ],
+         "b": ["c"],
+         "c": ["a", "b"],
          "d": [],
-         "e": ["c", "b"],
+         "e": [],
          "f": [],
-         "g": [],
-         "h": []
+         "h": [],
+         "j": []
          }
 
-
-
-
-## graph logic pinched from https://www.python-course.eu/graphs_python.php
-
-def generate_edges(graph):
-    edges = []
-    for node in graph:
-        for neighbour in graph[node]:
-            edges.append((node, neighbour))
-
-    return edges
-
-variable = (generate_edges(graph))
 
 # go through graph and get key values
 # get connected values, e.g. c
@@ -52,6 +38,4 @@ for key in list(graph):
 
                     pass
 
-if (len(graph) == 0):
-    counter = 1
 print(len(graph) + counter)
